@@ -23,9 +23,10 @@
 }
 
 .btm {
-    border: 2px outset #c5d6c3;
+    /* border: 2px outset #c5d6c3; */
+    background-image: linear-gradient(#c5d6c3,#f4ffee);
     border-radius: 10px;
-    background-color: #c5d6c3;
+    /* background-color: #c5d6c3; */
 }
 
 
