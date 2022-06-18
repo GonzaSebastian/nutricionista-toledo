@@ -23,10 +23,8 @@
 }
 
 .btm {
-    /* border: 2px outset #c5d6c3; */
     background-image: linear-gradient(#c5d6c3,#f4ffee);
     border-radius: 10px;
-    /* background-color: #c5d6c3; */
 }
 
 
@@ -167,6 +165,15 @@ ul li a {
 }
 .footer__redesLogo img {
     width: 50px;
+}
+@keyframes logoRedes {
+    50% {transform: translateY(-160px);}
+    55% {transform: translateY(-160px);}
+    75% {transform: translateY(0px);}
+    85% {transform: translateY(-10px);}
+    90% {transform: translateY(0px);}
+    95% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
 }
 /* STYLES FOOTER */
 
