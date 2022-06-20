@@ -7,9 +7,10 @@
     font-family: 'Cinzel', sans-serif;
     box-sizing: border-box;
 }
+
 /* RESETEO */
 
-.grilla {
+/* .grilla {
     display: grid;
     grid-template-areas:
     "header header header"
@@ -20,167 +21,154 @@
     grid-template-columns: 1fr 2fr 2fr;
     overflow: auto;
     height: 100vh;
-}
+} */
 
 .btm {
-    background-image: linear-gradient(#c5d6c3,#f4ffee);
+    background-image: linear-gradient(#c5d6c3, #f4ffee);
     border-radius: 10px;
+}
+.bor {
+    border: 2px solid red;
 }
 
 
 /* STYLES HEADER  */
 .header {
-    grid-area: header;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
     background-color: #f4ffee;
-    width: 100%;
 }
-.header__section {
-    display: flex;
-    align-items: flex-end;
-}
-.header__logo {
-    width: 10rem;
-}
-.header__text {
-    font-size: 1.5rem;
-    position: relative;
-    line-height: 3.5rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-}
-.header__nav {
-    font-size: 1rem;
-    display: flex;
-}
-.ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-end;
-    padding-bottom: 1rem;
-}
-.ul li {
-    text-align: center;
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
-    height: 1.5rem;
-    padding-bottom: 1.5rem;
+.logo {
+    width: 55%;
 }
 .ul li:hover {
     background-color: #c5d6c3;
     border-radius: 3px;
 }
-ul li a {
-    text-decoration: none;
-    color: #000000;
+ul {
+    list-style: none;
 }
+ul li {
+    width: 8rem;
+    text-align: center;
+}
+
 /* STYLES HEADER  */
 
 
 /* STYLES MAIN  */
 .aside {
-    grid-area: aside;
+    /* grid-area: aside; */
     background-image: url(https://img.freepik.com/free-photo/top-half-view-delicious-chicken-skewers-wooden-board-other-stuffs-table_140725-148773.jpg?w=740);
     background-attachment: fixed;
     background-repeat: repeat-y;
 }
+
 .main {
     background-image: url(../img/piramide.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position-y: center;
-    width: 100%;
-    grid-area: main;
-}
-.main__container {
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-}
-.main__title {
-    position: relative;
-    padding-right: 15rem;
-    font-size: 1.5rem;
-    text-align: end;
-    padding-top: 1rem;
+    /* width: 100%; */
+    /* grid-area: main; */
 }
 
-.main__index {
-    text-align: end;
-    line-height: 6rem;
-    width: 100%;
-    padding-right: 20%;
-    font-size: 3rem;
-}
 .main__index h6 {
+    font-size: 3.5rem;
     font-weight: 100;
-    font-family: 'Cinzel', sans-serif;
+    line-height: 7rem;
+    /* font-family: Cinzel; */
 }
+
 .main__about {
-    text-align: center;
-    line-height: 6rem;
-    z-index: 1;
-    padding-right: 5rem;
-    padding-left: 5rem;
-    font-size: 2rem;
+    /* text-align: center; */
+    /* line-height: 6rem; */
+    /* z-index: 1; */
+    /* padding-right: 5rem; */
+    /* padding-left: 5rem; */
+    /* font-size: 2rem; */
 }
+
 /* STYLES MAIN  */
 
 
 /* STYLES FOOTER */
-.footer{
-    background-color: #fbe5cc;
-    grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
+.footer {
+    /* background-color: #fbe5cc; */
+    /* grid-area: footer; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
 }
+
 .footer__p {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 1rem;
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* padding-bottom: 1rem; */
 }
+
 .footer__slogan {
-    font-size: 2.3rem;
-    display: flex;
-    align-items: center;
-    margin-left: 170px;
-    margin-right: 170px;
+    /* font-size: 2.3rem; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin-left: 170px; */
+    /* margin-right: 170px; */
 }
+
 .footer__redes {
-    display: flex;
+    /* display: flex; */
 }
+
 .footer__redes ul {
-    list-style: none;
-    line-height: 3.6rem;
-    padding-left: 1rem;
+    /* list-style: none; */
+    /* line-height: 3.6rem; */
+    /* padding-left: 1rem; */
 }
+
 .footer__redesLogo {
-    padding-top: 5px;
-    animation-name: logoRedes;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;  
+    /* padding-top: 5px; */
+    /* animation-name: logoRedes; */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: ease-in; */
+    /* animation-duration: 3s; */
 }
+
 .footer__redesLogo img {
-    width: 50px;
+    /* width: 50px; */
 }
+
 @keyframes logoRedes {
-    50% {transform: translateY(-160px);}
-    55% {transform: translateY(-160px);}
-    75% {transform: translateY(0px);}
-    85% {transform: translateY(-10px);}
-    90% {transform: translateY(0px);}
-    95% {transform: translateY(-10px);}
-    100% {transform: translateY(0px);}
+    50% {
+        transform: translateY(-160px);
+    }
+
+    55% {
+        transform: translateY(-160px);
+    }
+
+    75% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: translateY(-10px);
+    }
+
+    90% {
+        transform: translateY(0px);
+    }
+
+    95% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
+
 /* STYLES FOOTER */
 
 
 /* FR MOBILE */
-@media screen and (max-width:480px) {
+/* @media screen and (max-width:480px) {
     .header {
         display: flex;
         flex-direction: column;
@@ -265,11 +253,11 @@ ul li a {
     .footer__redesLogo img {
         width: 2rem;
     }
-}
+} */
 /* FR MOBILE */
 
 /* FR TABLET */
-@media screen and (max-width:1080px) {
+/* @media screen and (max-width:1080px) {
     .header {
         display: flex;
         flex-direction: column;
@@ -350,5 +338,5 @@ ul li a {
     .footer__redesLogo img {
         width: 2rem;
     }
-}
+} */
 /* FR TABLET */
