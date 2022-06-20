@@ -10,17 +10,19 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
 </head>
 
-<body>
+<body class="grilla">
     <header class="header">
-        <a href="../index.html" class="header__a">
-            <img src="../img/logo.jpeg" alt="logo habitos verdes" class="header__logo">
-        </a>
-        <div class="header__text">
-            <h1>FLORENCIA COELHO</h1>
-            <h2>LIC. EN NUTRICIÓN</h2>
-        </div>
-        <nav>
-            <ul class="header__nav">
+        <section class="header__section">
+        <a href="../index.html">
+                <img src="../img/logo.jpeg" alt="logo habitos verdes" class="header__logo">
+            </a>
+            <div class="header__text">
+                <h1>FLORENCIA COELHO</h1>
+                <h2>LIC. EN NUTRICIÓN</h2>
+            </div>
+        </section>    
+        <nav class="header__nav">
+            <ul class="ul">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./sobre-mi.html">Sobre mi</a></li>
                 <li><a href="./articulos.html">Artículos</a></li>
@@ -30,32 +32,36 @@
         </nav> 
     </header>
 
-    <main class="main">
-        <h3 class="main__title">RECETAS</h3>
-        <img src="../img/piramide.png" alt="piramide nutricional" class="main__img">
-            
-            <!-- AQUI VAN RECETAS -->
+    <aside class="aside">
+        <!-- aside -->
+    </aside>
 
+    <main class="main">
+        <div class="main__conteiner">
+             <h3 class="main__title">RECETAS</h3>
+                 <!-- AQUI VAN RECETAS -->
+        </div>
     </main>
     
     <footer class="footer">
         <p class="footer__p">M.P. Nº5547</p>
         <h2 class="footer__slogan">Y VOS, ¿COMO TE ALIMENTAS?</h2>
-        <div class="footer__redesLogo">
-            <img src="../img/Facebook.png" alt="logo Facebook" width="50">
-            <br>
-            <img src="../img/instagram.png" alt="logo Instagram" width="50">
-        </div>
         <div class="footer__redes">
+            <div class="footer__redesLogo">
+                <img src="../img/Facebook.png" alt="logo Facebook">
+                <br>
+                <img src="../img/instagram.png" alt="logo Instagram">   
+            </div>
             <ul>
                 <li>
                     <a href="https://www.facebook.com/habitos.verdes.arg/" target="_blank">/habitos.verdes</a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/habitos.verdes/" target="_blank">/habitos.verdes</a>
-                </li>    
-            </ul>      
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
+
 </html>
