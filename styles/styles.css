@@ -98,6 +98,7 @@ ul li a {
 }
 .main__conteiner {
     background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
 }
 .main__title {
     position: relative;
