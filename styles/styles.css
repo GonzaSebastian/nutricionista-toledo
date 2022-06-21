@@ -36,8 +36,11 @@
 .header {
     background-color: #f4ffee;
 }
+.header div h1 {
+    font-size: 2em;
+}
 .logo {
-    width: 55%;
+    width: 10rem;
 }
 .ul li:hover {
     background-color: #c5d6c3;
@@ -45,6 +48,7 @@
 }
 ul {
     list-style: none;
+    font-size: 0.8rem;
 }
 ul li {
     width: 8rem;
@@ -70,11 +74,15 @@ ul li {
     /* width: 100%; */
     /* grid-area: main; */
 }
-
+.main div {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .main__index h6 {
-    font-size: 3.5rem;
+    font-size: 2.3em;
     font-weight: 100;
-    line-height: 7rem;
+    line-height: 6rem;
+    text-align: end;
+    margin-right: 15rem;
     /* font-family: Cinzel; */
 }
 
@@ -92,251 +100,103 @@ ul li {
 
 /* STYLES FOOTER */
 .footer {
-    /* background-color: #fbe5cc; */
+    background-color: #fbe5cc;
     /* grid-area: footer; */
     /* display: flex; */
     /* justify-content: space-evenly; */
 }
 
-.footer__p {
-    /* display: flex; */
-    /* align-items: flex-end; */
-    /* padding-bottom: 1rem; */
+.footer__ul {
+    line-height: 3rem;
+    width: 100%;
 }
-
-.footer__slogan {
-    /* font-size: 2.3rem; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* margin-left: 170px; */
-    /* margin-right: 170px; */
-}
-
-.footer__redes {
-    /* display: flex; */
-}
-
-.footer__redes ul {
-    /* list-style: none; */
+.footer__ul li a{
+    text-decoration: none;
+    color: #111111;
     /* line-height: 3.6rem; */
     /* padding-left: 1rem; */
 }
 
 .footer__redesLogo {
     /* padding-top: 5px; */
-    /* animation-name: logoRedes; */
-    /* animation-iteration-count: infinite; */
-    /* animation-timing-function: ease-in; */
-    /* animation-duration: 3s; */
+    transform: translateX(2rem);
+    animation-name: logoRedes;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
 }
 
 .footer__redesLogo img {
-    /* width: 50px; */
+    width: 50px;
 }
 
 @keyframes logoRedes {
     50% {
-        transform: translateY(-160px);
+        transform: translate(2rem,-160px);
     }
 
     55% {
-        transform: translateY(-160px);
+        transform: translate(2rem,-160px);
     }
 
     75% {
-        transform: translateY(0px);
+        transform: translate(2rem,0px);
     }
 
     85% {
-        transform: translateY(-10px);
+        transform: translate(2rem,-10px);
     }
 
     90% {
-        transform: translateY(0px);
+        transform: translate(2rem,0px);
     }
 
     95% {
-        transform: translateY(-10px);
+        transform: translate(2rem,-10px);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translate(2rem,0px);
     }
 }
 
 /* STYLES FOOTER */
 
-
-/* FR MOBILE */
-/* @media screen and (max-width:480px) {
-    .header {
-        display: flex;
-        flex-direction: column;
+/* FR TABLET */
+@media screen and (max-width:1200px) {
+    .logo {
+        width: 8em;
     }
-    .header__section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .header__a {
-        width: 20%;
-        height: 100%;
-    }
-    .header__logo {
-        width: 180%;
-    }
-    .header__text {
-        font-size: 0.8rem;
-        text-align: end;
-        line-height: 2.5rem;
-        width: 80%;
-        padding-right:1rem;
-        padding-bottom: 0%;
-    }
-    .header__nav ul {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .ul li {
-        width: 100%;
-    }
-    .main__index {
-        width: 90%;
-        line-height: 4rem;
-        text-align: end;
-        padding-right: 3rem;
+    .header div h1 {
+        font-size: 1.5em;
     }
     .main__index h6 {
-        font-size: 27%;  
-        font-weight: 900;
+        font-size: 1.4rem;
+        /* font-weight: 100; */
+        /* line-height: 6rem; */
+        /* text-align: end; */
+        /* margin-right: 15rem; */
+        /* font-family: Cinzel; */
     }
-    .main p {
-        text-align: justify;
-        font-size: 0.8rem;
-        line-height: 2rem;
-        font-weight: 700;
+}
+/* FR TABLET */
+
+/* FR MOBILE */
+@media screen and (max-width:769px) {
+    .logo {
+        width: 6em;
     }
-    .main__title {
-        display: none;
+    .header div h1 {
+        font-size: 1em;
     }
-    .footer {
-        display: grid;
-        grid-template-areas: 
-        'slogan slogan'
-        'mp redes'
-        ;
-        row-gap: 1rem;
+    .main__index h6 {
+        font-size: 1em;
+        /* font-weight: 100; */
+        /* line-height: 6rem; */
+        /* text-align: end; */
+        /* margin-right: 15rem; */
+        /* font-family: Cinzel; */
     }
-    .footer__slogan {
-        grid-area: slogan;
-        margin: 0%;
-        width: 100%;
-    }
-    .footer h2 {
-        font-size: 1.1rem;
-    }
-    .footer__p {
-        grid-area: mp;
-        font-size: 0.6rem;
-    }
-    .footer__redes {
-        grid-area: redes;
-        font-size: 0.9rem;
-        justify-content: end;
-        margin-right: 1rem;
-    }
-    .footer__redes ul {
-        line-height: 2.5rem;
-    }
-    .footer__redesLogo img {
-        width: 2rem;
-    }
-} */
+}
 /* FR MOBILE */
 
-/* FR TABLET */
-/* @media screen and (max-width:1080px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
-    .header__section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 0%;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .header__logo {
-        width: 8rem;
-    }
-    .header__text {
-        font-size: 0.6rem;
-        line-height: 2.5rem;
-        padding: 0%;
-        text-align: end;
-    }
-    .header__nav {
-        width: 100%;
-        display: flex;
-        align-content: space-around;
-    }
-    .header__nav ul {
-        font-size: 0.8rem;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .main__title {
-        font-size: 1rem;
-        font-weight: 100;
-        padding-right: 2rem;
-    }
-    .main__index{
-        transform: translateX(4rem);
-    }
-    .main__about {
-        font-size: 1.3rem;
-        line-height: 4rem;
-    }
-
-    .main__img {
-        width: 90%;
-        transform: translateX(-5rem);
-        opacity: 50%;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-areas: 
-        'slogan slogan'
-        'mp redes'
-        ;
-        padding-top: 1rem;
-    }
-    .footer__slogan {
-        grid-area: slogan;
-        display: absolut;
-        font-size: 1.7rem;
-    }
-    .footer__p {
-        grid-area: mp;
-        font-size: 0.6rem;
-    }
-    .footer__redes {
-        grid-area: redes;
-        font-size: 0.9rem;
-        justify-content: end;
-        margin-right: 1rem;
-    }
-    .footer__redes ul {
-        line-height: 2.5rem;
-    }
-    .footer__redesLogo img {
-        width: 2rem;
-    }
-} */
-/* FR TABLET */
