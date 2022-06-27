@@ -94,7 +94,10 @@ ul li {
     /* margin-top: 3rem; */
     margin-bottom: 3rem;
 }
-
+.main__form {
+    height: 900px;
+    background-color: rgb(251, 229, 204, 50%);
+}
 /* STYLES MAIN  */
 
 
