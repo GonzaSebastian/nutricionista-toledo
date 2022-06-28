@@ -53,66 +53,53 @@
             </aside>
         
             <main class="col-10 main">
-                <div class="main__div d-flex flex-column">
+                <div class="main__div d-flex flex-column align-items-end">
                     <h3 class="fs-5 text-end mt-2 me-5">CONTACTAME</h3>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-
-                    <!-- FORMULARIO MIO -->
-                    <form class="form text-center mb-4 border main__form">
-                        <fieldset>
-                            <div>
+                    <!-- FORMULARIO -->
+                    <form class="d-flex text-center mb-4 px-5 border main__form">
+                        <fieldset class="d-flex flex-column justify-content-evenly">
+                            <div class="mt-3 mb-3">
                                 <label for="nombre">NOMBRE Y APELLIDO</label>
                                 <input type="text" name="nombre" placeholder="Hábitos Verdes">
                             </div>
                             <br>
-                            <div>
+                            <div class="mb-3">
                                 <label for="dni">ULTIMOS 3 NUMEROS DEL DNI</label>
                                 <input type="number" name="dni" placeholder="999">
                             </div>
                             <br>
-                            <div>
+                            <div class="mb-3">
                                 <label for="nombre">LOCALIDAD</label>
                                 <input type="text" name="nombre" placeholder="Hábitos Verdes">
                             </div>
                             <br>
-                            <div>
+                            <div class="mb-3">
                                 <label for="correo">DIRECCION DE EMAIL</label>
                                 <input type="email" name="email" placeholder="habitos.verdes@****.com">
                             </div>
-                             <article>
-                                <p>HOMBRE</p>
-                                <input type="radio" name="sexo" value="hombre">
-                                <p>MUJER</p>
-                                <input type="radio" name="sexo" value="hombre">
+                             <article class="mb-3 d-flex justify-content-center">
+                                <div class="mx-3">
+                                    <label for="sexo">HOMBRE</label>
+                                    <input type="radio" name="sexo" value="hombre">
+                                </div>
+                                <div class="mx-3">
+                                    <label for="sexo">MUJER</label>
+                                    <input type="radio" name="sexo" value="mujer">
+                                 </div>
                              </article>
-                            <div>
+                            <div class="mb-3">
                                 <select name="modalidad" id="">MODALIDAD
                                     <option value="presencial">Presencial</option>
                                     <option value="virual">Virtual</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="mt-4 d-flex justify-content-evenly">
                                 <input type="submit" value="ENVIAR">
                                 <input type="reset" value="BORRAR">
                             </div>
                         </fieldset>
                     </form>
-                    <!-- FORMULARIO MIO -->
+                    <!-- FORMULARIO-->
                 </div>
             </main>
         </section>

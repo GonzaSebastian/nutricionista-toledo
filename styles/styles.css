@@ -84,19 +84,19 @@ ul li {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* align-content: stretch; */
-    height: auto;
 }
 .main__articulos div {
     height: 650px;
     width: 600px;
-    background-color: rgb(244, 255, 238, 80%);
+    background-color: rgba(235, 235, 235, 0.8);
     /* margin-top: 3rem; */
     margin-bottom: 3rem;
+    box-shadow: 1px 2px 3px;
 }
 .main__form {
-    height: 900px;
+    height: 600px;
     background-color: rgb(251, 229, 204, 50%);
+    margin-right: 15rem;
 }
 /* STYLES MAIN  */
 
@@ -184,6 +184,9 @@ ul li {
         font-size: 2rem;
         line-height: 5rem;
     }
+    .main__form {
+        margin-right: 10rem;
+    }
 }
 /* FR TABLET */
 
@@ -211,6 +214,9 @@ ul li {
     .main__about {
         font-size: 1rem;
         line-height: 3rem;
+    }
+    .main__form {
+        margin-right: 0rem;
     }
     .footer__p {
         font-size: 0.7rem;
