@@ -86,7 +86,7 @@ ul li:hover {
 .bloque__main .main .main__articulos div {
   height: 650px;
   width: 600px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(235, 235, 235, 0.8);
   /* margin-top: 3rem; */
   margin-bottom: 3rem;
   box-shadow: 1px 2px 3px;
