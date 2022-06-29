@@ -1,0 +1,62 @@
+/* STYLES FOOTER */
+.footer {
+    background-color: $colorSecundario;
+    p {
+        padding-left: 5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .footer__redes {
+        .footer__redesLogo {
+            transform: translateX(2rem);
+            animation-name: logoRedes;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+            img {
+                width: 50px;
+            }
+        }
+        .footer__ul {
+            line-height: 3rem;
+            width: 100%;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #111111;
+                } 
+            }
+        }
+    }
+}
+@keyframes logoRedes {
+    50% {
+        transform: translate(2rem,-160px);
+    }
+
+    55% {
+        transform: translate(2rem,-160px);
+    }
+
+    75% {
+        transform: translate(2rem,0px);
+    }
+
+    85% {
+        transform: translate(2rem,-10px);
+    }
+
+    90% {
+        transform: translate(2rem,0px);
+    }
+
+    95% {
+        transform: translate(2rem,-10px);
+    }
+
+    100% {
+        transform: translate(2rem,0px);
+    }
+}
+/* STYLES FOOTER */

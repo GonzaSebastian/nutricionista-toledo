@@ -1,0 +1,52 @@
+/* STYLES MAIN  */
+.bloque__main {
+    padding-top: 10rem;
+    .aside {
+        background-image: url(https://img.freepik.com/free-photo/top-half-view-delicious-chicken-skewers-wooden-board-other-stuffs-table_140725-148773.jpg?w=740);
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+    }
+    .main {
+        background-image: url(../img/piramide.png);
+        background-size: 40rem;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        .main__div {
+            background-color: $colorGris;
+            height: 100%;
+            h6 {
+                font-size: 2.3em;
+                font-weight: 100;
+                line-height: 7rem;
+                text-align: end;
+                margin-right: 15rem;
+            }
+        }
+        .main__about {
+            text-align: center;
+            font-size: 1.8rem;
+            line-height: 8rem;
+            padding: 4rem;
+        }
+        .main__articulos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            div {
+                height: 650px;
+                width: 600px;
+                background-color: $colorGris;
+                /* margin-top: 3rem; */
+                margin-bottom: 3rem;
+                box-shadow: 1px 2px 3px;
+            }
+        }
+        .main__form {
+            height: 600px;
+            background-color: rgb(251, 229, 204, 50%);
+            margin-right: 15rem;
+        }
+    }
+   }
+   /* STYLES MAIN  */
+   
