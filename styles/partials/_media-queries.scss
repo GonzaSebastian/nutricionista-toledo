@@ -8,21 +8,23 @@
     }
     .bloque__main {
         padding-top: 11rem;
-       }
-    .main {
-        background-size: 30rem;
-    }
-    .main__index h6 {
-        font-size: 1.4rem;
-        width: 100%;
-        line-height: 5rem;
-    }
-    .main__about {
-        font-size: 2rem;
-        line-height: 5rem;
-    }
-    .main__form {
-        margin-right: 10rem;
+        .main {
+            background-size: 30rem;
+            .main__div {
+                .main__index h6 {
+                    font-size: 1.4rem;
+                    width: 100%;
+                    line-height: 5rem;
+                }
+                .main__about {
+                    font-size: 2rem;
+                    line-height: 5rem;
+                }
+                .main__form {
+                    margin-right: 10rem;
+                }   
+            }
+        }
     }
 }
 /* FR TABLET */
@@ -37,39 +39,47 @@
     }
     .bloque__main {
         padding-top: 9.5rem;
+        .main {
+            background-size: 17rem;
+            .main__div { 
+                .main__index h6 {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    font-size: 1.1rem;
+                    line-height: 3.5rem;
+                    font-weight: bold;
+                }
+                .main__form {
+                    margin-right: 0rem;
+                }
+                .main__about {
+                    font-size: 1rem;
+                    line-height: 3rem;
+                    padding: 0.3rem;
+                }
+            }
        }
-    .main {
-        background-size: 17rem;
     }
-    .main__index h6 {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        font-size: 1.1rem;
-        line-height: 3rem;
-        font-weight: bold;
-    }
-    .main__about {
-        font-size: 1rem;
-        line-height: 3rem;
-    }
-    .main__form {
-        margin-right: 0rem;
-    }
-    .footer__p {
-        font-size: 0.7rem;
-        padding-left: 2rem;
-    }
-    .footer h2 {
-        font-size: 1.4rem;
-    }
-    .footer__ul {
-        font-size: 0.7rem;
-        line-height: 1.8rem;
-        width: auto;
-        transform: translateX(-1rem);
-    }
-    .footer__redesLogo img {
-        width: 2rem;
+
+    .footer {
+        .footer__p {
+            font-size: 0.7rem;
+            padding-left: 2rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        .footer__redes {
+            .footer__ul {
+                font-size: 0.7rem;
+                line-height: 1.8rem;
+                width: auto;
+                transform: translateX(-1rem);
+            }
+            .footer__redesLogo img {
+                width: 2rem;
+            }
+        }
     }
 }
 /* FR MOBILE */

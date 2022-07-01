@@ -57,7 +57,7 @@ ul li:hover {
 }
 .bloque__main .main {
   background-image: url(../img/piramide.png);
-  background-size: 40rem;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -110,10 +110,14 @@ ul li:hover {
 }
 .footer .footer__redes .footer__redesLogo {
   transform: translateX(2rem);
-  animation-name: logoRedes;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
+  -webkit-animation-name: logoRedes;
+          animation-name: logoRedes;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 .footer .footer__redes .footer__redesLogo img {
   width: 50px;
@@ -125,6 +129,30 @@ ul li:hover {
 .footer .footer__redes .footer__ul li a {
   text-decoration: none;
   color: #111111;
+}
+
+@-webkit-keyframes logoRedes {
+  50% {
+    transform: translate(2rem, -160px);
+  }
+  55% {
+    transform: translate(2rem, -160px);
+  }
+  75% {
+    transform: translate(2rem, 0px);
+  }
+  85% {
+    transform: translate(2rem, -10px);
+  }
+  90% {
+    transform: translate(2rem, 0px);
+  }
+  95% {
+    transform: translate(2rem, -10px);
+  }
+  100% {
+    transform: translate(2rem, 0px);
+  }
 }
 
 @keyframes logoRedes {
@@ -156,25 +184,27 @@ ul li:hover {
   .logo {
     width: 8em;
   }
+
   .header div h1 {
     font-size: 1.5em;
   }
+
   .bloque__main {
     padding-top: 11rem;
   }
-  .main {
+  .bloque__main .main {
     background-size: 30rem;
   }
-  .main__index h6 {
+  .bloque__main .main .main__div .main__index h6 {
     font-size: 1.4rem;
     width: 100%;
     line-height: 5rem;
   }
-  .main__about {
+  .bloque__main .main .main__div .main__about {
     font-size: 2rem;
     line-height: 5rem;
   }
-  .main__form {
+  .bloque__main .main .main__div .main__form {
     margin-right: 10rem;
   }
 }
@@ -184,46 +214,48 @@ ul li:hover {
   .logo {
     width: 6em;
   }
+
   .header div h1 {
     font-size: 1.1rem;
   }
+
   .bloque__main {
     padding-top: 9.5rem;
   }
-  .main {
+  .bloque__main .main {
     background-size: 17rem;
   }
-  .main__index h6 {
+  .bloque__main .main .main__div .main__index h6 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.1rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
     font-weight: bold;
   }
-  .main__about {
-    font-size: 1rem;
-    line-height: 3rem;
-  }
-  .main__form {
+  .bloque__main .main .main__div .main__form {
     margin-right: 0rem;
   }
-  .footer__p {
+  .bloque__main .main .main__div .main__about {
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0.3rem;
+  }
+
+  .footer .footer__p {
     font-size: 0.7rem;
     padding-left: 2rem;
   }
   .footer h2 {
     font-size: 1.4rem;
   }
-  .footer__ul {
+  .footer .footer__redes .footer__ul {
     font-size: 0.7rem;
     line-height: 1.8rem;
     width: auto;
     transform: translateX(-1rem);
   }
-  .footer__redesLogo img {
+  .footer .footer__redes .footer__redesLogo img {
     width: 2rem;
   }
 }
-/* FR MOBILE */
-
-/*# sourceMappingURL=estilos.css.map */
+/* FR MOBILE *//*# sourceMappingURL=estilos.css.map */
